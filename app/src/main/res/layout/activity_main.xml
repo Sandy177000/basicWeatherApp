@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etCityName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter city name"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Weather"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Condition:"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvForecast"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
